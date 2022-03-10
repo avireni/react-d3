@@ -10,10 +10,12 @@ const customStyles = {
 },
   rows: {
     style: {
-      fontSize: '18px'
+      fontSize: '18px',
+      
     },
   }
 };
+
 
 function CompanyDataTable({ data }) {
 

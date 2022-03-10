@@ -3,7 +3,7 @@ import Tree from 'react-d3-tree';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import axiosConfig from '../../config/axios.config';
 import useCenteredTree from '../../hooks/useCenteredTree';
-import { CompaniesContainer } from './styles.js';
+import { CompaniesContainer, Button } from './styles.js';
 
 
 const containerStyles = {
@@ -75,14 +75,12 @@ function CompanyDetails() {
   }
 
   useEffect(() => {
-    console.log('NODE CLICKED')
     fetchCompanyDetails(companyId)
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [companyId])
 
   const handleNodeClick = (node) => {
-    console.log('handleNodeClick', { node });
     fetchCompanyDetails(node.data.id);
   }
 
@@ -92,7 +90,7 @@ function CompanyDetails() {
 
   return (
     <CompaniesContainer>
-      <button type="button" onClick={goback}>Go back</button>
+      <Button type="button" onClick={goback}>Back</Button>
       <div style={containerStyles} ref={containerRef}>
         {initialData?.children?.length ?
           <Tree

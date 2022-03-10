@@ -1,3 +1,7 @@
 .search-engine {
   text-align: center;
 }
+.rdt_Table .rdt_TableRow:hover {
+  background-color: #fdf7e2;
+  cursor: pointer;
+}

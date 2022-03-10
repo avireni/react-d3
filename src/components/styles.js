@@ -7,11 +7,11 @@ export const SearchEngine = styled.div`
 
 export const Button = styled.button`
     font-size: 18px;
-    padding: 5px;
+    padding: 5px 20px;
 `
 export const Input = styled.input`
     font-size: 18px;
-    padding: 5px;
+    padding: 5px 10px;
     margin-right: 10px;
     width: 30%;
 `   
