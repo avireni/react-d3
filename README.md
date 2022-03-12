@@ -1,7 +1,7 @@
 # Altana Search and Traverse
 
 Altana's Atlas is a knowledge graph of companies connected to each other via trade relationships. 
-This product is provides a user interface with a visualization of the graph network, and a way to discover entities and traverse the graph.
+This product provides a user interface with a visualization of the graph network, and a way to discover entities and traverse the graph.
 
 This is a Single Page Application with Routes to main page and Graph visualization Page showing trading partners network.
 
